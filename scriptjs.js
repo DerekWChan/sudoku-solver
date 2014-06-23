@@ -7,7 +7,14 @@ $(function() {
 });
 
 function convertFromStringToDOM() {
-	var uglyStringOfNumbers = $('pre').text();
+	uglyStringOfNumbers = $('pre').text();
+	var uglyArrayOfNumbers = uglyStringOfNumbers.split('\n');
+
+	for(arrayCounter = 0; arrayCounter < 9; arrayCounter++) {
+		uglyArrayOfNumbers[arrayCounter] = uglyArrayOfNumbers[arrayCounter].split(' ');
+	}
+
+	return uglyArrayOfNumbers;
 }
 
 function solve() {
