@@ -1,6 +1,6 @@
 $(function() {
 	var solveButton = $('#solve');
-	//solveButton.html('Solve');
+	solveButton.html('Solve');
 	solveButton.bind('click', function() {
 		solve();
 	})
